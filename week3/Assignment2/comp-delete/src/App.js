@@ -4,12 +4,12 @@ import Todos from './STORE.js';
 import {useState} from 'react';
 
 function App() {
-  const [todos, setTodos] = useState({Todos});  
+  const [todos, setTodos] = useState(Todos);  
 
 
   const completeTodo = id => {
     const tempTodos = [...todos];
-    const todoID = tempTodos.find(todo => todo.id = id);
+    const todoID = tempTodos.find(todo => todo.id === id);
     todoID.isCompleted = true;
     setTodos(tempTodos);
   }
