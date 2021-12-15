@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 
-const Todos = [
+export const listOfTodos = [
     {   id: uuidv4(),
         text: "goto gym",
         isCompleted: false
@@ -18,7 +18,5 @@ const Todos = [
         id: uuidv4(),
         text: "do homework",
         isCompleted: false
-    },
+    }
 ];
-
-export default Todos;

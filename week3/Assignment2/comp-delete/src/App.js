@@ -1,10 +1,10 @@
 import './App.css';
 import ToDoList from './ToDoList.js';
-import Todos from './STORE.js';
+import {listOfTodos} from './STORE.js';
 import {useState} from 'react';
 
 function App() {
-  const [todos, setTodos] = useState(Todos);  
+  const [todos, setTodos] = useState(listOfTodos);  
 
 
   const completeTodo = id => {
